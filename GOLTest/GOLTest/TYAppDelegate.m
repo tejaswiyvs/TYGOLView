@@ -7,6 +7,7 @@
 //
 
 #import "TYAppDelegate.h"
+#import "TYTestViewController.h"
 
 @implementation TYAppDelegate
 
@@ -14,6 +15,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    TYTestViewController *testScreen = [[TYTestViewController alloc] init];
+    self.window.rootViewController = testScreen;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

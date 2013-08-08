@@ -16,6 +16,8 @@
 		B709AA3717B42BB600A6ADE6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B709AA3617B42BB600A6ADE6 /* Default.png */; };
 		B709AA3917B42BB600A6ADE6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B709AA3817B42BB600A6ADE6 /* Default@2x.png */; };
 		B709AA3B17B42BB600A6ADE6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B709AA3A17B42BB600A6ADE6 /* Default-568h@2x.png */; };
+		B709AA4317B42BDA00A6ADE6 /* TYGOLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B709AA4217B42BDA00A6ADE6 /* TYGOLView.m */; };
+		B709AA4617B42BE400A6ADE6 /* TYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B709AA4517B42BE400A6ADE6 /* TYTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		B709AA3617B42BB600A6ADE6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B709AA3817B42BB600A6ADE6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B709AA3A17B42BB600A6ADE6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B709AA4117B42BDA00A6ADE6 /* TYGOLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYGOLView.h; path = ../../GOLView/TYGOLView.h; sourceTree = "<group>"; };
+		B709AA4217B42BDA00A6ADE6 /* TYGOLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYGOLView.m; path = ../../GOLView/TYGOLView.m; sourceTree = "<group>"; };
+		B709AA4417B42BE400A6ADE6 /* TYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTestViewController.h; sourceTree = "<group>"; };
+		B709AA4517B42BE400A6ADE6 /* TYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,12 @@
 		B709AA2A17B42BB600A6ADE6 /* GOLTest */ = {
 			isa = PBXGroup;
 			children = (
+				B709AA4117B42BDA00A6ADE6 /* TYGOLView.h */,
+				B709AA4217B42BDA00A6ADE6 /* TYGOLView.m */,
 				B709AA3317B42BB600A6ADE6 /* TYAppDelegate.h */,
 				B709AA3417B42BB600A6ADE6 /* TYAppDelegate.m */,
+				B709AA4417B42BE400A6ADE6 /* TYTestViewController.h */,
+				B709AA4517B42BE400A6ADE6 /* TYTestViewController.m */,
 				B709AA2B17B42BB600A6ADE6 /* Supporting Files */,
 			);
 			path = GOLTest;
@@ -167,6 +177,8 @@
 			files = (
 				B709AA3117B42BB600A6ADE6 /* main.m in Sources */,
 				B709AA3517B42BB600A6ADE6 /* TYAppDelegate.m in Sources */,
+				B709AA4317B42BDA00A6ADE6 /* TYGOLView.m in Sources */,
+				B709AA4617B42BE400A6ADE6 /* TYTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
