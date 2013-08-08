@@ -20,13 +20,6 @@
 @property (nonatomic) CGSize cellSize;
 @property (nonatomic) TYGOLPattern pattern;
 
-@property (nonatomic, strong) UIColor *deadCellColor;
-@property (nonatomic, strong) UIColor *deadCellBorderColor;
-@property (nonatomic, strong) UIColor *liveCellColor1;
-@property (nonatomic, strong) UIColor *liveCellBorderColor1;
-@property (nonatomic, strong) UIColor *liveCellColor2;
-@property (nonatomic, strong) UIColor *liveCellBorderColor2;
-
 @property (nonatomic, strong) NSMutableArray *currentIteration;
 @property (nonatomic, strong) NSMutableArray *nextIteration;
 @property (nonatomic, strong) NSMutableArray *views;
@@ -41,14 +34,6 @@
         self.pattern = pattern;
         self.showing = NO;
         self.cellSize = size;
-        
-        // Set up styling info. Change these if you want different colors on your view.
-        self.deadCellColor = [UIColor whiteColor];
-        self.deadCellBorderColor = [UIColor whiteColor];
-        self.liveCellColor1 = [UIColor colorWithRed:(228.0f / 255.0f) green:(235.0f / 255.0f) blue:(248.0f / 255.0f) alpha:1.0f];
-        self.liveCellBorderColor1 = [UIColor colorWithRed:(218.0f / 255.0f) green:(225.0f / 255.0f) blue:(248.0f / 255.0f) alpha:1.0f];
-        self.liveCellColor2 = [UIColor colorWithRed:(218.0f / 255.0f) green:(225.0f / 255.0f) blue:(248.0f / 255.0f) alpha:1.0f];
-        self.liveCellBorderColor2 = [UIColor colorWithRed:(208.0f / 255.0f) green:(215.0f / 255.0f) blue:(248.0f / 255.0f) alpha:1.0f];
         
         // Configure some UIView properties
         self.userInteractionEnabled = NO;
@@ -186,21 +171,21 @@
             int element = [self elementAtIndex1:i index2:j];
             int sum = [self numberOfNeighborsForElementAtIndex1:i index2:j];
             if (element == 0) {
-                [view setBackgroundColor:[UIColor whiteColor]];
+                [view setBackgroundColor:GOLDeadCellColor];
                 [view.layer setBorderWidth:0.0f];
-                [view.layer setBackgroundColor:[[UIColor whiteColor] CGColor]];
+                [view.layer setBackgroundColor:[GOLDeadCellBorderColor CGColor]];
                 view.alpha = 1.0f;
             }
             else if (element == 1 && sum == 2) {
-                [view setBackgroundColor:self.liveCellColor1];
+                [view setBackgroundColor:GOLLiveCellColor1];
                 [view.layer setBorderWidth:0.5f];
-                [view.layer setBorderColor:[self.liveCellBorderColor1 CGColor]];
+                [view.layer setBorderColor:[GOLLiveCellBorderColor1 CGColor]];
                 view.alpha = 1.0f;
             }
             else if (element == 1 && sum == 3) {
-                [view setBackgroundColor:self.liveCellColor2];
+                [view setBackgroundColor:GOLLiveCellColor2];
                 [view.layer setBorderWidth:0.5f];
-                [view.layer setBorderColor:[self.liveCellBorderColor2 CGColor]];
+                [view.layer setBorderColor:[GOLLiveCellBorderColor2 CGColor]];
                 view.alpha = 1.0f;
             }
         }
