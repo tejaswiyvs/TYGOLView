@@ -255,10 +255,17 @@
 		B709AA3F17B42BB600A6ADE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tejaswi Yerukalapudi (RDKM9UC3U5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tejaswi Yerukalapudi (RDKM9UC3U5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GOLTest/GOLTest-Prefix.pch";
 				INFOPLIST_FILE = "GOLTest/GOLTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F770279A-5430-4F74-862D-ABA21C840511";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F770279A-5430-4F74-862D-ABA21C840511";
+				SDKROOT = iphoneos6.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -266,10 +273,17 @@
 		B709AA4017B42BB600A6ADE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tejaswi Yerukalapudi (RDKM9UC3U5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tejaswi Yerukalapudi (RDKM9UC3U5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GOLTest/GOLTest-Prefix.pch";
 				INFOPLIST_FILE = "GOLTest/GOLTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F770279A-5430-4F74-862D-ABA21C840511";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F770279A-5430-4F74-862D-ABA21C840511";
+				SDKROOT = iphoneos6.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -293,6 +307,7 @@
 				B709AA4017B42BB600A6ADE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

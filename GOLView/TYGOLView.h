@@ -9,12 +9,6 @@
 #import <UIKit/UIKit.h>
 
 typedef enum {
-    TYGOLPatternRandom,
-    TYGOLPattern2,
-    TYGOLPattern3
-} TYGOLPattern;
-
-typedef enum {
     TYGOLMaskTypeNone,
     TYGOLMaskTypeClear,
     TYGOLMaskTypeBlack
@@ -22,30 +16,18 @@ typedef enum {
 
 #define GOLDeadCellColor        [UIColor whiteColor]
 #define GOLDeadCellBorderColor  [UIColor whiteColor]
-
-#define GOLLiveCellColor1       [UIColor colorWithRed:(228.0f / 255.0f) \
-                                                green:(235.0f / 255.0f) \
-                                                blue:(248.0f / 255.0f) \
+#define GOLLiveCellColor        [UIColor colorWithRed:(193.0f / 255.0f) \
+                                                green:(207.0f / 255.0f) \
+                                                 blue:(247.0f / 255.0f) \
                                                 alpha:1.0f]
 
-#define GOLLiveCellBorderColor1 [UIColor colorWithRed:(218.0f / 255.0f) \
-                                                green:(225.0f / 255.0f) \
-                                                 blue:(248.0f / 255.0f) \
+#define GOLLiveCellBorderColor  [UIColor colorWithRed:(183.0f / 255.0f) \
+                                                green:(197.0f / 255.0f) \
+                                                 blue:(237.0f / 255.0f) \
                                                 alpha:1.0f]
-
-#define GOLLiveCellColor2       [UIColor colorWithRed:(218.0f / 255.0f) \
-                                                green:(225.0f / 255.0f) \
-                                                 blue:(248.0f / 255.0f) \
-                                                alpha:1.0f]
-
-#define GOLLiveCellBorderColor2 [UIColor colorWithRed:(208.0f / 255.0f) \
-                                                green:(215.0f / 255.0f) \
-                                                 blue:(248.0f / 255.0f) \
-                                                alpha:1.0f]
-
 @interface TYGOLView : UIView
 
-- (id)initWithFrame:(CGRect)frame cellSize:(CGSize) size pattern:(TYGOLPattern) pattern;
+- (id)initWithFrame:(CGRect)frame cellSize:(CGSize) size;
 
 - (void)stopAnimating;
 - (void)startAnimating;
