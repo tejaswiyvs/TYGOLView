@@ -8,6 +8,11 @@ You can use this
  - As the header view of a UITableView
  - As a placeholder on a screen that doesn't have any data.
 
+A couple of notes before you start using this:
+ - Whilst this has some optmizations built-in, it doesn't directly implement the popular algorithms like QLife / Hashlife
+ - Instead of using lookup tables, I wanted to make the game of life using easily readable code. 
+ - I should probably do some benchmarking at some point, but a quick test shows it runs without any noticeable lag on a 4S with ~1000 cells.
+
 Usage:
 ------
 

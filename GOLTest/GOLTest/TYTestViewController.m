@@ -29,7 +29,7 @@
     [super viewDidLoad];
     
     TYGOLView *golView = [[TYGOLView alloc] initWithFrame:self.view.bounds
-                                                 cellSize:CGSizeMake(10.0f, 10.0f)];
+                                                 cellSize:CGSizeMake(15.0f, 15.0f)];
     [golView startAnimating];
     [self.view addSubview:golView];
 }
